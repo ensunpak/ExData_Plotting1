@@ -1,6 +1,6 @@
 # Download the project data file
-# download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", "household_power.zip", method = "curl")
-# unzip("household_power.zip")
+download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", "household_power.zip", method = "curl")
+unzip("household_power.zip")
 
 # Assign the data set into a variable
 data <- read.csv("household_power_consumption.txt", header = T, sep = ";", na.strings = "?", check.names = F, stringsAsFactors =  F, comment.char = "", quote = '\"')
